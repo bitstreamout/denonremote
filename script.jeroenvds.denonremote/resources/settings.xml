@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<settings>
-    <category label="32004">
-        <setting label="32001" type="ipaddress"   id="denonip" default="192.168.1.202"/>
-        <setting label="32002" type="labelenum"   id="denoninput" default="MPLAY"  values="SAT/CBL|DVD|BD|TV|MPLAY|TUNER|GAME|AUX1"/>
+<settings version="1">
+  <section id="script.jeroenvds.denonremote">
+    <category id="remote" label="33000">
+      <group id="0">
+         <setting id="denonip" label="33001" type="string">
+           <level>0</level>
+           <default>192.168.0.0</default>
+           <control type="edit" format="ip">
+              <heading>150</heading>
+           </control>
+         </setting>
+         <setting id="denoninput" label="33002" type="string">
+           <level>0</level>
+           <default>MPLAY</default>
+           <constraints>
+              <options sort="ascending">
+              <option label="SAT/CBL">SAT/CBL</option>
+              <option label="DVD">DVD</option>
+              <option label="BluRay">BD</option>
+              <option label="TV">TV</option>
+              <option label="MediaPlayer">MPLAY</option>
+              <option label="Tuner">TUNER</option>
+              <option label="GAME">GAME</option>
+              <option label="AUX1">AUX1</option>
+              </options>
+           </constraints>
+           <control type="spinner" format="string"/>
+         </setting>
+      </group>
     </category>
+  </section>
 </settings>

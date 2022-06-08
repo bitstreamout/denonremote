@@ -2,15 +2,15 @@
 <addon 	id="script.jeroenvds.denonremote" 
 				name="Denon Remote" 
 				version="0.0.3" 
-				provider-name="Jeroen">
+				provider-name="bitstreamout">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
 	<extension point="xbmc.service" library="default.py" start="login" />
 	<extension point="xbmc.addon.metadata">
 		<summary>Denon Remote</summary>
 		<description>Will turn on your Denon AVR when playing something</description>
 		<platform>all</platform>
-		<email>vds.jeroen@gmail.com</email>
+		<email>bitstreamout@gmail.com</email>
 	</extension>
 </addon>
